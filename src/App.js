@@ -1,7 +1,12 @@
+// Importar los elementos necesarios para utilizar en el componente
 import logo from './platzi.webp';
 import './App.css';
 
+// Componente principal. Los componentes van en mayusculas. 
 function App() {
+  // Los componentes retornar elementos JSX.
+  // Utiliza JSX (parecido a html) para mostrar los componentes.
+
   return (
     <div className="App">
 
@@ -26,6 +31,10 @@ function App() {
     </div>
   );
 }
+
+// Creamos un componente
+// Los componentes de llaman entre <>
+// Ejemplo: <TodoItem />
 
 function TodoItem() {
   return (
