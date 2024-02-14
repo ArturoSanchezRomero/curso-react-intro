@@ -7,6 +7,9 @@ function App() {
   // Los componentes retornar elementos JSX.
   // Utiliza JSX (parecido a html) para mostrar los componentes.
 
+  // Los componentes de llaman entre <>
+  // Ejemplo: <TodoItem />
+
   return (
     <div className="App">
 
@@ -33,8 +36,6 @@ function App() {
 }
 
 // Creamos un componente
-// Los componentes de llaman entre <>
-// Ejemplo: <TodoItem />
 
 function TodoItem() {
   return (
