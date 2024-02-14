@@ -1,3 +1,4 @@
+// Puedes crear componentes con la extension ES7+ React/Redux/React-Native snippets -> rfce
 
 function TodoItem() {
   return (
