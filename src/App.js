@@ -16,11 +16,17 @@ const defaultTodos = [
 function App() {
   return (
     <React.Fragment>
+      {/* Enviamos datos a los componentes */}
       <TodoCounter completed={16} total={25} />
       <TodoSearch />
 
+      {/* React transforma todos lo que este dentro de nuestro componente en propiedad children*/}
       <TodoList>
         {defaultTodos.map(todo => (
+      /* Cada iteración debe llevar un id unico para identificarlo.
+          En este caso, mandamos a TodoItem un arreglo (con map) para que renderice cada elemento del arreglo.
+          Cada propiedad será la misma que recebira en props el componente TodoItem
+      */
           <TodoItem
             key={todo.text}
             text={todo.text}
@@ -28,7 +34,7 @@ function App() {
           />
         ))}
       </TodoList>
-      
+        
       <CreateTodoButton />
     </React.Fragment>
   );
